@@ -5,30 +5,29 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-
-// tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
-// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
-// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+const dinosaurs = [
+  {name: 'tyrannosaurus', diet: 'carnivorous' , weight:7000kg, length: 12m, period:'Late Cretaceous'},
+  {name:'stegosaurus', diet: 'herbivorous' , weight:2000kg, length: 12m, period:'Late Jurassic'},
+  {name: 'velociraptor', diet: 'carnivorous' , weight:7000kg, length: 1.8m, period:'Late Cretaceous'},
+]
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(dinosaurs[0].weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dinosaurs[2].diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dinosaurs[1].length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log([0].period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(`${dinosaurs[0].name}`);
 
 
 // ==== Arrays ====
@@ -88,6 +87,11 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
+zooAnimals.forEach(zooAnimals => {
+  animalNames.push(`${animalNames}`)
+});
+
+
 const animalNames = [];
 console.log(animalNames);
 
@@ -97,7 +101,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
+const lowerCase = zooAnimals.map(zooAnimals => zooAnimals.animalNames.toLowerCase());
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
